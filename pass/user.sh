@@ -7,8 +7,7 @@ check=""$current_path"/check.sh"
 
 single-user() {
 	read -p "username : " username
-	echo "password : " 
-	read -s password
+	read -s -p "password : " password
 	"$check" "$password"
 	echo
 	read -p "preferred shell : " shell
@@ -19,7 +18,7 @@ single-user() {
 }
 
 multiple-users() {
-	echo "not implemneted yet"	
+	
 }
 
 read -p "Would you like to create (o)ne or (m)ultiple users? : " choice

@@ -5,7 +5,7 @@ current_path=$(pwd)
 check=""$current_path"/check.sh"
 
 echo
-echo "Enter your password : " ; read -s passwd
+read -s -p "Enter your password : " passwd
 
 "$check" "$passwd"
 
